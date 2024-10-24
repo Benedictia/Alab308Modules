@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Modules</title>
+</head>
+<body>
+    <h1>Code Modules Lab</h1>
+
+    <script type='module'>
+        import { calculateLearnerScores, assignments1} from './Modules/index.js';
+       
+        const LearnerSubmissions = [
+          { learner_id: 1, submission: { score: 85 } },
+          { learner_id: 2, submission: { score: 90 } },
+          { learner_id: 1, submission: { score: 95 } }
+        ];
+      
+        const learnerScores = calculateLearnerScores(LearnerSubmissions);
+        console.log(learnerScores);
+      
+        console.log("Due Assignments with Reduced Points:", assignments1);
+      </script>
+      
+
+   
+</body>
+</html>
+
+
